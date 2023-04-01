@@ -1,7 +1,7 @@
-const Note = () => (
+const Note = ({ title, content }) => (
   <div className="note">
-    <h1>This is the note title</h1>
-    <p>This is the note content</p>
+    <h1>{title}</h1>
+    <p>{content}</p>
   </div>
 );
 
