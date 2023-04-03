@@ -7,7 +7,7 @@ const CreateArea = ({ setNotes }) => {
   });
 
   const handleSubmit = () => {
-    setNotes(prevValue => [...prevValue, { ...noteInfo, key: prevValue.length }]);
+    setNotes(prevValue => [...prevValue, { ...noteInfo, id: prevValue.length }]);
     setNoteInfo({ title: "", content: "" });
   }
 
